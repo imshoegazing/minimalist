@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #fff #000;
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #000;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Comfortaa, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: Kaushan Script, sans-serif;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+nav {
+  z-index: 10;
+  position: fixed;
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  padding: 25px;
+  width: 100vw;
+  background: rgb(255 255 255 / 50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+nav.show {
+  opacity: 1;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  border-bottom: 3px solid;
+}
+
+img {
+  margin: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/* Home */
+
+#home {
+  height: 100vh;
+}
+
+.welcome-text {
+  width: 500px;
+  text-align: center;
+}
+
+/* About */
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.hero-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.hero-picture img {
+  width: 400px;
+  margin-right: 50px;
+  border-radius: 1%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.hero-information {
+  width: 400px;
+  margin-left: 50px;
+}
+
+/* Projects */
+
+.urbanistic-header {
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.urbanistic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.urbanistic-info {
+  margin: 80px;
+  width: 400px;
+}
+
+.urbanistic img {
+  width: 500px;
+  height: 700px;
+  border-radius: 1%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.abstract-header {
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.abstract {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abstract-info {
+  margin: 60px;
+  width: 400px;
+}
+
+.abstract img {
+  margin: 25px;
+  width: 500px;
+  height: 700px;
+  border-radius: 1%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.visual-header {
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-info {
+  margin: 20px;
+  width: 400px;
+}
+
+.visual img {
+  margin: 25px;
+  width: 500px;
+  height: 700px;
+  border-radius: 1%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.nature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nature-header {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.nature-pictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+.nature-info {
+  margin-top: 30px;
+  width: 800px;
+}
+
+.nature img {
+  margin: 20px;
+  width: 400px;
+  height: 700px;
+  border-radius: 1%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.contact-header {
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  margin: 80px;
+  width: 400px;
+}
+
+.contact-picture img {
+  width: 500px;
+  height: 700px;
+  border-radius: 1%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+#footer {
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(0, 0, 0);
+  margin-top: 100px;
+}
+
+.social-media {
+  font-size: 40px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 10px;
+  border-bottom: none;
+}
+
+.social-media a:hover,
+a:focus {
+  border-bottom: none;
+}
+
+@media (max-width: 1790px) {
+  .nature-pictures {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1600px) {
+  .urbanistic,
+  .abstract,
+  .visual,
+  .nature .nature-pictures {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1145px) {
+  .contact-picture img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .contact-info {
+    margin: 20px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-picture img {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .hero-information {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .nature-info {
+    width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-picture img {
+    width: 220px;
+    margin-right: 15px;
+  }
+
+  .hero-information {
+    width: 200px;
+    margin-left: 15px;
+  }
+
+  .contact-info {
+    width: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .urbanistic img,
+  .abstract img,
+  .visual img,
+  .nature-pictures img {
+    width: 370px;
+    height: 570px;
+  }
+
+  .urbanistic-info,
+  .abstract-info,
+  .visual-info,
+  .nature-info {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .contact-picture img {
+    width: 250px;
+    height: 350px;
+  }
+
+  .contact-info {
+    width: 150px;
+  }
+}
+
+@media (max-width: 495px) {
+  body {
+    text-align: center;
+  }
+
+  .hero-picture {
+    margin-bottom: 15px;
+  }
+
+  .hero-about,
+  .contact-me {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .hero-information {
+    width: 300px;
+  }
+
+  #footer {
+    margin-top: 10px;
+  }
+
+  .about-header,
+  .urbanistic-header,
+  .nature-header,
+  .about-header,
+  .abstract-header,
+  .visual-header,
+  .contact-header {
+    margin: 5px 0;
+  }
+
+  .hero-information,
+  .urbanistic-info,
+  .abstract-info,
+  .nature-info,
+  .visual-info {
+    margin: 5px;
+  }
+
+  .contact-info {
+    margin: 5px 0 30px 0;
+  }
+
+  .urbanistic-header {
+    margin-bottom: 15px;
+  }
+
+  .urbanistic img,
+  .abstract img,
+  .visual img,
+  .nature-pictures img {
+    width: 250px;
+    height: 350px;
+  }
+
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nav a {
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  #footer {
+    font-size: 15px;
+  }
+}
